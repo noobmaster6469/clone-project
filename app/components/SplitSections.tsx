@@ -1,0 +1,14 @@
+import React from "react";
+import LeftSection from "./LeftSection";
+import RightSection from "./RightSection";
+
+const SplitSections = () => {
+  return (
+    <div className=" px-[7vw] flex">
+      <LeftSection />
+      <RightSection />
+    </div>
+  );
+};
+
+export default SplitSections;
