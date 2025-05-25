@@ -6,6 +6,10 @@ import Services from "./Services";
 import { servicesDescription } from "@/constant/days";
 import Professionals from "./Professionals";
 import { professionalsName } from "@/constant/days";
+import Reviews from "./Reviews";
+import Gallery from "./Gallery";
+import Map from "./Map";
+import About from "./About";
 
 const LeftSection: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -66,6 +70,32 @@ const LeftSection: React.FC = () => {
             <Professionals key={idx} name={name} />
           ))}
         </div>
+      </div>
+
+      <div className="review mt-4 mb-10 ">
+        <h1 className="font-bold text-3xl border-b-2 pb-2 mb-8">
+          Customer Review
+        </h1>
+        <Reviews />
+      </div>
+
+      <div className="gallery mt-4 mb-10 ">
+        <h1 className="font-bold text-3xl border-b-2 pb-2 mb-8">Gallery</h1>
+        <Gallery />
+      </div>
+
+      <div className="map mt-4 mb-10 ">
+        <h1 className="font-bold text-3xl border-b-2 pb-2 mb-8">
+          Contact Information
+        </h1>
+        <Map />
+      </div>
+
+      <div className="about mt-4 mb-10 ">
+        <h1 className="font-bold text-3xl border-b-2 pb-2 mb-8">
+          About This Salon
+        </h1>
+        <About />
       </div>
     </div>
   );

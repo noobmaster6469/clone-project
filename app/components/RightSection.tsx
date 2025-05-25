@@ -6,7 +6,7 @@ const RightSection = () => {
   const jsDayIndex = new Date().getDay();
   const today = days[(jsDayIndex + 6) % 7];
   return (
-    <div className="mt-4 rounded-md border-1 flex-3 h-fit sticky top-16 shadow-md">
+    <div className="my-4 rounded-md border-1 flex-3 h-fit sticky top-16 shadow-md">
       <div className="topSection w-full flex flex-col gap-4 border-b-2 p-4">
         <div className="flex items-center gap-4">
           <Image
