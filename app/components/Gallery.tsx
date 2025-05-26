@@ -35,7 +35,8 @@ const Gallery: React.FC = () => {
 
   return (
     <>
-      <div className="flex h-[500px] gap-4">
+      {/* Full gallery only on lg and up */}
+      <div className="hidden md:flex h-[500px] gap-4">
         {/* Left image */}
         <div className="w-1/2 h-full relative">
           {renderImage(images[0].src, images[0].alt, "w-full h-full")}
@@ -55,6 +56,11 @@ const Gallery: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Mobile view: only show the first image */}
+      <div className="block md:hidden h-[300px] relative">
+        {renderImage(images[0].src, images[0].alt, "w-full h-full")}
       </div>
 
       {/* Modal */}

@@ -9,11 +9,13 @@ const Reviews = () => {
     "★".repeat(count) + "☆".repeat(5 - count);
 
   return (
-    <>
-      <div className="review flex items-center justify-center bg-[#f8f9fa] rounded-sm py-10">
-        <div className="left flex flex-col items-center justify-center flex-1">
+    <div className="px-2">
+      <div className="review flex flex-col sm:flex-row items-center justify-center bg-[#f8f9fa] rounded-sm py-10">
+        <div className="left flex flex-col items-center justify-center w-1/3">
           <h1 className="text-3xl font-bold">4.5</h1>
-          <h2 className="text-[#1e1e1e] font-semibold">Based on 120 Reviews</h2>
+          <h2 className="text-[#1e1e1e] font-semibold text-center">
+            Based on 120 Reviews
+          </h2>
           <div className="flex mt-2 items-center">
             <Star size={16} fill="#ffc107" stroke="#ffc107" />
             <Star size={16} fill="#ffc107" stroke="#ffc107" />
@@ -23,7 +25,7 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="right flex-2 flex flex-col gap-2">
+        <div className="right w-full px-4  sm:w-2/3 flex flex-col gap-2">
           <div className="one flex gap-4 items-center">
             <div className="bar flex-10 h-1.5 rounded-xl bg-[#f9f1d6] relative w-full overflow-hidden">
               <div
@@ -109,7 +111,7 @@ const Reviews = () => {
       </div>
 
       <UserReview />
-    </>
+    </div>
   );
 };
 

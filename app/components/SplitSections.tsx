@@ -4,7 +4,7 @@ import RightSection from "./RightSection";
 
 const SplitSections = () => {
   return (
-    <div className=" px-[7vw] gap-4 flex">
+    <div className="sm:px-[7vw] px-2 gap-4 xl:flex">
       <LeftSection />
       <RightSection />
     </div>

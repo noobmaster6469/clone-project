@@ -42,7 +42,7 @@ export default function UserReview() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       {reviews.map((review) => (
         <div key={review.id} className="mb-8 border-b pb-6">
-          <div className="flex items-start gap-4">
+          <div className="flex sm:flex-row flex-col items-start gap-4">
             <Image
               src={review.avatarUrl}
               alt={review.name}
@@ -58,12 +58,12 @@ export default function UserReview() {
               <p className="mt-2 text-gray-700">{review.comment}</p>
 
               {review.managerReply && (
-                <div className="mt-4 bg-gray-100 rounded p-4 flex items-start gap-3">
+                <div className="mt-4 bg-gray-100 rounded p-4 flex sm:flex-row flex-col items-start gap-3">
                   <Image
                     src={review.avatarUrl}
                     alt="Manager"
-                    width={32}
-                    height={32}
+                    width={48}
+                    height={48}
                     className="rounded-full w-12 h-12 object-cover"
                   />
                   <div>
@@ -73,7 +73,7 @@ export default function UserReview() {
                 </div>
               )}
             </div>
-            <div className="ml-4 bg-yellow-400 text-black font-semibold rounded px-2 py-1">
+            <div className="sm:ml-4 ml-0 bg-yellow-400 text-black font-semibold rounded px-2 py-1">
               {review.rating}
             </div>
           </div>

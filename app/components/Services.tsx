@@ -13,7 +13,7 @@ interface ServicesProps {
 
 const Services: React.FC<{ props: ServicesProps }> = ({ props }) => {
   return (
-    <div className="flex items-center justify-between border-1 rounded-sm p-6 text-gray-600">
+    <div className="flex items-center gap-10 justify-between border-1 rounded-sm p-6 text-gray-600">
       <div className="left">
         <span className="font-semibold text-xl text-black">{props.name}</span>
         <div className="flex items-center gap-1 mt-1">
@@ -28,7 +28,7 @@ const Services: React.FC<{ props: ServicesProps }> = ({ props }) => {
             {props.originalPrice}
           </span>
           {props.discount && (
-            <span className="text-green-700 bg-[#e8f3ee] px-2 py-1 rounded-xl text-sm font-semibold">
+            <span className="text-green-700 bg-[#e8f3ee] px-2 py-1 rounded-xl text-[10px] font-bold">
               Discount available
             </span>
           )}
