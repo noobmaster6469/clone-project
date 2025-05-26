@@ -75,6 +75,20 @@ interface servicesDescription {
   discount: boolean;
 }
 
+export interface User {
+  name: string | null;
+  url?: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  dob?: string;
+  gender?: string;
+  city?: string;
+  country?: string;
+  state?: string;
+  postalCode?: string;
+}
+
 export const servicesDescription: servicesDescription[] = [
   {
     name: "Deluxe Manicure",
@@ -148,3 +162,17 @@ export const professionalsName: string[] = [
   "Soman Dhakal",
   "Koshal Karki",
 ];
+
+export const user: User = {
+  name: "Jacqueline Miller",
+  url: "/avatar.jpg",
+  email: "sBk4I@example.com",
+  phone: "+1 202-358-0309",
+  address: "302 Darling street Balmain NSW 2041",
+  dob: "1990-05-15",
+  gender: "female",
+  city: "Balmain",
+  country: "Australia",
+  state: "New South Wales",
+  postalCode: "2041",
+};

@@ -128,3 +128,17 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888888; /* Tailwind gray-400 */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b6b6b; /* Tailwind gray-600 */
+}
+::-webkit-scrollbar-track {
+  background: #edf2f7; /* Tailwind gray-100 */
+}

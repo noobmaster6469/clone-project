@@ -25,7 +25,7 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="right w-full px-4  sm:w-2/3 flex flex-col gap-2">
+        <div className="right w-full px-4 sm:px-0 sm:w-2/3 flex flex-col gap-2">
           <div className="one flex gap-4 items-center">
             <div className="bar flex-10 h-1.5 rounded-xl bg-[#f9f1d6] relative w-full overflow-hidden">
               <div
@@ -102,7 +102,7 @@ const Reviews = () => {
             ></textarea>
             <button
               type="submit"
-              className="cursor-pointer flex items-center font-semibold justify-center w-fit bg-black text-white px-8 py-4 rounded-4xl gap-4 hover:bg-gray-700"
+              className="cursor-pointer flex items-center font-semibold justify-center w-fit bg-black text-white px-8 py-4 rounded-4xl gap-4 hover:bg-gray-700 active:translate-x-1 transition"
             >
               Post Review <MoveRight />
             </button>

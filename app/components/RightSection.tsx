@@ -1,6 +1,7 @@
 import { Clock, Facebook, Instagram, Star, Youtube } from "lucide-react";
 import Image from "next/image";
 import { days } from "@/constant/days";
+import Link from "next/link";
 
 const RightSection = () => {
   const jsDayIndex = new Date().getDay();
@@ -31,9 +32,11 @@ const RightSection = () => {
             <h1 className="font-semibold">Thornbury, Melbourne</h1>
           </div>
         </div>
-        <button className="w-full text-xl bg-black text-white py-2 rounded-full hover:bg-gray-700 cursor-pointer active:scale-95">
-          Book Now
-        </button>
+        <Link href="/booking">
+          <button className="w-full text-xl bg-black text-white py-2 rounded-full hover:bg-gray-700 cursor-pointer active:scale-95">
+            Book Now
+          </button>
+        </Link>
       </div>
 
       <div className="open border-b-2">

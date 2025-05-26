@@ -79,7 +79,7 @@ export default function UserReview() {
           </div>
         </div>
       ))}
-      <button className="block mx-auto bg-black text-white px-4 py-2 rounded-md cursor-pointer hover:bg-gray-700">
+      <button className="block mx-auto bg-black text-white px-4 py-2 rounded-md cursor-pointer hover:bg-gray-700 active:scale-95">
         Load more
       </button>
     </div>

@@ -76,7 +76,7 @@ const LeftSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="review mt-4 mb-10">
+      <div className="review mt-4 ">
         <h1 className="pl-4 md:pl-0 font-bold text-xl md:text-3xl border-b-2 pb-2 mb-8">
           Customer Review
         </h1>
