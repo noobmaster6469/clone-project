@@ -32,7 +32,7 @@ const RightSection = () => {
             <h1 className="font-semibold">Thornbury, Melbourne</h1>
           </div>
         </div>
-        <Link href="/book">
+        <Link href="/book/services">
           <button className="w-full text-xl bg-black text-white py-2 rounded-full hover:bg-gray-700 cursor-pointer active:scale-95">
             Book Now
           </button>

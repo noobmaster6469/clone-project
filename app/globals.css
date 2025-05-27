@@ -142,3 +142,13 @@
 ::-webkit-scrollbar-track {
   background: #edf2f7; /* Tailwind gray-100 */
 }
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* Optional: style the thumb */
+.modal-scroll::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+  border-radius: 6px;
+}

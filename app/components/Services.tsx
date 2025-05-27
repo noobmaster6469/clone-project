@@ -14,7 +14,7 @@ interface ServicesProps {
 
 const Services: React.FC<{ props: ServicesProps }> = ({ props }) => {
   return (
-    <div className="flex items-center gap-10 justify-between border-1 rounded-sm p-6 text-gray-600">
+    <div className="mb-4 flex items-center gap-10 justify-between border-1 rounded-sm p-6 text-gray-600">
       <div className="left">
         <span className="font-semibold text-xl text-black">{props.name}</span>
         <div className="flex items-center gap-1 mt-1">

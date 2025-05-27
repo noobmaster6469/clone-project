@@ -285,6 +285,9 @@ type Booking = {
   bookingDate: string;
   bookingTime: string;
   bookedBy: string;
+  price?: string;
+  time?: string;
+  professionalsName?: string;
 };
 
 export const completedBookings: Booking[] = [
@@ -317,6 +320,9 @@ export const bookings: Booking[] = [
     bookingDate: "Tue 05 Aug 12:00 AM",
     bookingTime: "Tue 06 Aug 4:00 PM",
     bookedBy: "Frances Guerrero",
+    price: "$50",
+    time: "45 mins",
+    professionalsName: "Alex Johnson",
   },
   {
     title: "Manicure",
@@ -325,5 +331,8 @@ export const bookings: Booking[] = [
     bookingDate: "Tue 05 Aug 12:00 AM",
     bookingTime: "Tue 06 Aug 4:00 PM",
     bookedBy: "Frances Guerrero",
+    price: "$80",
+    time: "1 Hour",
+    professionalsName: "Alex Johnson",
   },
 ];

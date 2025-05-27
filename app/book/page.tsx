@@ -1,21 +1,17 @@
-"use client";
+import Link from "next/link";
 import React from "react";
-import Navbar from "../components/Navbar";
-import { user } from "@/constant/days";
-import Foot from "../components/Foot";
-// import { useSelector } from "react-redux";
-// import { RootState } from "@/lib/redux/store";
 
 const Booking = () => {
-  // const user = useSelector((state: RootState) => state.user);
-
   return (
     <>
-      <div className="min-h-screen bg-red-400">
-        <Navbar user={user} />
-        <h1 className="mt-12">This is booking page</h1>
-      </div>
-      <Foot />
+      <h1 className="h-screen w-screen flex items-center justify-center text-3xl ">
+        <Link
+          className="hover:text-blue-500 hover:underline"
+          href="/book/services"
+        >
+          Click me
+        </Link>
+      </h1>
     </>
   );
 };
