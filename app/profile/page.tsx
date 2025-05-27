@@ -2,14 +2,16 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { user } from "@/constant/days";
 import UserProfile from "../components/UserProfile";
+import Foot from "../components/Foot";
 
 const Profile = () => {
   return (
-    <div>
+    <div className="">
       <Navbar user={user} />
-      <h1 className="mt-28">
+      <div className="pt-20 min-h-screen">
         <UserProfile />
-      </h1>
+      </div>
+      <Foot />
     </div>
   );
 };

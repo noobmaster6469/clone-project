@@ -31,7 +31,6 @@ const Navbar = ({ user }: NavbarProps) => {
       setOpened(!opened);
     }
   };
-  console.log("user", user);
   return (
     <header className="border-b-1 fixed top-0 left-0 right-0 z-99 sm:px-[7vw] px-2 bg-white py-2 text-sm">
       <div className="container flex items-center justify-between mx-auto">

@@ -3,6 +3,7 @@ import React from "react";
 
 interface ServicesProps {
   name: string;
+  type: string;
   time: string;
   gender: string;
   description: string;
