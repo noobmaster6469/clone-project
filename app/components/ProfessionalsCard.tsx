@@ -15,12 +15,12 @@ const ProfessionalsCard = ({
   return (
     <div onClick={onClick}>
       <div
-        className={`flex flex-col justify-center items-center gap-4 h-60 w-60 rounded-xl p-4 bg-white cursor-pointer active:scale-95 border-1 transition-shadow duration-200 ease-in-out
-          ${
-            isActive
-              ? "border-[#38a69e] shadow-md shadow-[#38a69e]"
-              : "border-gray-200 hover:border-[#38a69e] hover:shadow-md hover:shadow-[#38a69e]"
-          }`}
+        className={`flex flex-col justify-center items-center gap-4 h-60 w-60 rounded-xl p-4 bg-white cursor-pointer active:scale-95 border transition-shadow duration-200 ease-in-out
+    ${
+      isActive
+        ? "border-[#38a69e] shadow-[0_0_8px_2px_#38a69e]"
+        : "border-gray-200 hover:border-[#38a69e] hover:shadow-[0_0_8px_2px_#38a69e]"
+    }`}
       >
         <div>
           <Image
