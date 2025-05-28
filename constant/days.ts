@@ -65,7 +65,7 @@ export const services = [
   "Manicure And Pedicure Service",
 ];
 
-interface servicesDescription {
+export interface ServicesDescription {
   name: string;
   type: string;
   time: string;
@@ -76,7 +76,7 @@ interface servicesDescription {
   discount: boolean;
 }
 
-export const servicesDescription: servicesDescription[] = [
+export const servicesDescription: ServicesDescription[] = [
   {
     name: "Deluxe Manicure",
     type: "Manicures (Over natural)",

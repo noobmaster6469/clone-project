@@ -1,18 +1,8 @@
 import { Plus } from "lucide-react";
 import React from "react";
+import { ServicesDescription } from "@/constant/days";
 
-interface ServicesProps {
-  name: string;
-  type: string;
-  time: string;
-  gender: string;
-  description: string;
-  originalPrice: string | null;
-  currentPrice: string;
-  discount: boolean;
-}
-
-const Services: React.FC<{ props: ServicesProps }> = ({ props }) => {
+const Services: React.FC<{ props: ServicesDescription }> = ({ props }) => {
   return (
     <div className="mb-4 flex items-center gap-10 justify-between border-1 rounded-sm p-6 text-gray-600">
       <div className="left">

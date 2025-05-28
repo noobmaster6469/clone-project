@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { servicesDescription, professionalsName } from "@/constant/days";
 import Services from "./Services";
 import Professionals from "./Professionals";
@@ -19,19 +19,30 @@ const LeftSection: React.FC = () => {
     groups[type].push(service);
     return groups;
   }, {} as Record<string, typeof servicesDescription>);
+
+  const serviceRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  const handleScrollTo = (type: string) => {
+    const element = serviceRefs.current[type];
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  };
+
   return (
     <div className="pt-4 h-fit w-full xl:w-4/6">
       {/* Sticky only within Services Section */}
       <div className="serviceDiv relative">
-        <Carousel />
+        <Carousel onSelectService={handleScrollTo} />
         <div className="services mt-4 flex flex-col gap-6">
-          {/* Map over each group */}
           {Object.entries(groupedServices).map(([type, services]) => (
-            <div key={type}>
-              {/* Heading for the group */}
+            <div
+              key={type}
+              ref={(el) => {
+                serviceRefs.current[type] = el;
+              }}
+            >
               <h2 className="text-2xl font-bold mb-4 capitalize">{type}</h2>
-
-              {/* Map services of this type */}
               {services.map((service, idx) => (
                 <Services key={idx} props={service} />
               ))}
