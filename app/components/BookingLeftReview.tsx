@@ -9,8 +9,8 @@ const BookingLeftReview = () => {
       <h1 className="text-3xl font-bold mb-6">Review & Confirm</h1>
       <ProfessionalDetails />
       <ServiceDetails />
-      <div className="bg-[#f8f9fa] p-6 rounded-md mb-6 flex gap-4">
-        <div className="left w-1/2 ">
+      <div className="bg-[#f8f9fa] p-6 rounded-md mb-6 flex flex-col sm:flex-row gap-4">
+        <div className="left w-full sm:w-1/2 mb-4">
           <h1 className="mb-4 text-md font-bold">Details:</h1>
           <div className="flex flex-col">
             <span>
@@ -25,7 +25,7 @@ const BookingLeftReview = () => {
             </span>
           </div>
         </div>
-        <div className="right w-1/2">
+        <div className="right ww-full sm:w-1/2">
           <h1 className="mb-4 text-md font-bold">Payment Method:</h1>
           <div className="flex flex-col">
             <span>

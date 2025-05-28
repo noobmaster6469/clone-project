@@ -26,7 +26,7 @@ const Review = () => {
         <div className="sm:px-[7vw] px-2 gap-4 xl:flex mb-10">
           <BookingLeftReview />
           <BookingRight
-            next={next}
+            next={"review"}
             dateTime={dateTime}
             orderedFood={orderedFood}
           />

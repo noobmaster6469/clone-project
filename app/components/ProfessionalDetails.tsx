@@ -7,7 +7,7 @@ const ProfessionalDetails = () => {
     <div className="bg-[#f8f9fa] p-6 rounded-md mb-6">
       <h1 className="mb-4 text-lg">Professional Details</h1>
 
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4">
         <Image
           className="rounded-md"
           src={user.url ? user.url : "/avatar.png"}
@@ -16,7 +16,7 @@ const ProfessionalDetails = () => {
           height={90}
         />
 
-        <div className="font-bold text-[#747579]">
+        <div className="font-bold flex flex-col items-center sm:items-start text-center text-[#747579]">
           <h1 className="text-black">{user.name}</h1>
           <p className="font-semibold">Address: {user.address}</p>
           <p className="font-semibold">Phoe: {user.phone}</p>

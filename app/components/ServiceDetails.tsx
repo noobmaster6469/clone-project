@@ -4,10 +4,10 @@ import React from "react";
 const ServiceDetails = () => {
   return (
     <div className="border-b mb-6">
-      <h1 className="mb-4 text-lg">Service Details</h1>
-      <div className="mb-6 flex items-center gap-4">
+      <h1 className="mb-4 text-lg sm:p-0 px-6">Service Details</h1>
+      <div className="mb-6 flex flex-col sm:flex-row items-center gap-4 ">
         <Image src="/shop1.jpg" alt="Service image" width={160} height={160} />
-        <div className="flex flex-col gap-1.5 text-[#747579] font-semibold">
+        <div className="flex flex-col items-center text-center sm:items-start gap-1.5 text-[#747579] font-semibold">
           <h1 className="font-bold ">Men Haircut</h1>
           <div className="flex items-end gap-2">
             <span> 1 hour</span>
