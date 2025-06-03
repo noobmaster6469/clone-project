@@ -217,7 +217,7 @@ export const servicesDescription: ServicesDescription[] = [
   // Manicure And Pedicure Service
   {
     name: "Classic Manicure & Pedicure",
-    type: "Manicure And Pedicure",
+    type: "Manicure And Pedicure Service",
     time: "2 Hours",
     gender: "Unisex",
     description:
@@ -228,7 +228,7 @@ export const servicesDescription: ServicesDescription[] = [
   },
   {
     name: "Spa Manicure & Pedicure",
-    type: "Manicure And Pedicure",
+    type: "Manicure And Pedicure Service",
     time: "2.5 Hours",
     gender: "Unisex",
     description:

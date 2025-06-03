@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useRef } from "react";
 import { servicesDescription, professionalsName } from "@/constant/days";
 import Services from "./Services";
@@ -25,7 +24,7 @@ const LeftSection: React.FC = () => {
   const handleScrollTo = (type: string) => {
     const element = serviceRefs.current[type];
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
